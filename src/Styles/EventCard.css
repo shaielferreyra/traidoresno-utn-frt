@@ -1,0 +1,13 @@
+.event-card {
+  cursor: pointer;
+}
+
+.event-card h3 {
+  margin: 0.5rem 0;
+  color: #e50914;
+}
+
+.event-card p {
+  font-size: 0.9rem;
+  color: #faf7f7;
+}
