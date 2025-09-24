@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Fuente rockera */
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --color-bg: #000;
+  --color-dark: #111;
+  --color-light: #fff;
+  --color-gray: #bbb;
+  --color-accent: #e50914;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-light);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 1px;
 }
 
-.card {
-  padding: 2em;
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+  transition: color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+a:hover {
+  color: var(--color-light);
+}
+
+/* Scrollbar estilo rock */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1e25;
+}
+
+/* Layout principal */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
