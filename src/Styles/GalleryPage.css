@@ -1,0 +1,13 @@
+.gallery-page {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.gallery-page h2 {
+  font-size: 2.5rem;
+  color: #e50914;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
