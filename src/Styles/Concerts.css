@@ -1,0 +1,43 @@
+.concerts {
+  background: #111;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.concerts h2 {
+  text-align: center;
+  color: #e50914;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.concerts-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.concerts-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.concerts-info p {
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.concerts-info ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  color: #bbb;
+}
+
+.concerts-cards {
+  flex: 1;
+  min-width: 280px;
+  display: grid;
+  gap: 1.5rem;
+}
